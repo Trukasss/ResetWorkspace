@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+
+id = "reset_workspace"
+version = "0.0.1"
+name = "Reset Workspace"
+tagline = "Reset the user interface (with your startup file interface)"
+maintainer = "Lukas Sabaliauskas <lukas_sabaliauskas@hotmail.com>"
+type = "add-on"
+tags = ["User Interface"]
+blender_version_min = "4.2.0"
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
