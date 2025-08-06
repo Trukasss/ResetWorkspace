@@ -29,7 +29,7 @@ class WORKSPACE_OT_reset(Operator):
 
     def execute(self, context: Context):
         fp = bpy.data.filepath
-        bpy.ops.wm.read_homefile(app_template="")
+        bpy.ops.wm.read_homefile(app_template="", load_ui=True)
         bpy.ops.wm.open_mainfile(filepath=fp, load_ui=False)
         return {"FINISHED"}
 
