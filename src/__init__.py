@@ -2,12 +2,12 @@ bl_info = {
     "name": "Reset Workspace",
     "description": "Reset the user interface (with your startup file interface)",
     "author": "Lukas Sabaliauskas <lukas_sabaliauskas@hotmail.com>",
-    "version": (0, 0, 1),
+    "version": (0, 0, 2),
     "blender": (4, 0, 0),
     "location": "Object Properties > Relations > Matrix Parent Inverse",
     "warning": "",
-    # "doc_url": "https://extensions.blender.org/add-ons/link-parents/",
-    # "tracker_url": "https://github.com/Trukasss/LinkParents",
+    "doc_url": "https://extensions.blender.org/add-ons/reset-workspace/",
+    "tracker_url": "https://github.com/Trukasss/ResetWorkspace",
     "category": "User Interface",
 }
 
