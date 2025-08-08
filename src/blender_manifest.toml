@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "reset_workspace"
-version = "0.0.2"
+version = "0.0.3"
 name = "Reset Workspace"
 tagline = "Reset the user interface (with your startup file interface)"
 maintainer = "Lukas Sabaliauskas <lukas_sabaliauskas@hotmail.com>"

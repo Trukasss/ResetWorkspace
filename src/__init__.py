@@ -2,7 +2,7 @@ bl_info = {
     "name": "Reset Workspace",
     "description": "Reset the user interface (with your startup file interface)",
     "author": "Lukas Sabaliauskas <lukas_sabaliauskas@hotmail.com>",
-    "version": (0, 0, 2),
+    "version": (0, 0, 3),
     "blender": (4, 0, 0),
     "location": "Object Properties > Relations > Matrix Parent Inverse",
     "warning": "",
@@ -14,6 +14,10 @@ bl_info = {
 
 import bpy
 from bpy.types import Context, Operator
+
+import importlib
+from . import icons
+importlib.reload(icons)
 
 
 class WORKSPACE_OT_reset(Operator):
@@ -37,10 +41,11 @@ class WORKSPACE_OT_reset(Operator):
 def draw_operator(self, context: Context):
     layout = self.layout
     layout.separator()
-    layout.operator(WORKSPACE_OT_reset.bl_idname, icon="WORKSPACE")
+    layout.operator(WORKSPACE_OT_reset.bl_idname, icon_value=icons.get_reset_id())
 
 
 def register():
+    icons.register()
     bpy.utils.register_class(WORKSPACE_OT_reset)
     bpy.types.TOPBAR_MT_window.append(draw_operator)
 
@@ -48,3 +53,4 @@ def register():
 def unregister():
     bpy.utils.unregister_class(WORKSPACE_OT_reset)
     bpy.types.TOPBAR_MT_window.remove(draw_operator)
+    icons.unregister()
