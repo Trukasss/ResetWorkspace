@@ -12,12 +12,15 @@ bl_info = {
 }
 
 
+is_reloading = "bpy" in locals()
+
 import bpy
 from bpy.types import Context, Operator
-
-import importlib
 from . import icons
-importlib.reload(icons)
+
+if is_reloading:
+    import importlib
+    importlib.reload(icons)
 
 
 class WORKSPACE_OT_reset(Operator):
