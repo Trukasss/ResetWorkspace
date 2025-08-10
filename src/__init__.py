@@ -2,7 +2,7 @@ bl_info = {
     "name": "Reset Workspace",
     "description": "Reset the user interface (with your startup file interface)",
     "author": "Lukas Sabaliauskas <lukas_sabaliauskas@hotmail.com>",
-    "version": (0, 0, 3),
+    "version": (0, 0, 4),
     "blender": (4, 0, 0),
     "location": "Object Properties > Relations > Matrix Parent Inverse",
     "warning": "",
