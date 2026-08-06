@@ -10,9 +10,9 @@ def register():
     _icons = bpy.utils.previews.new()
     icons_dir = Path(__file__).parent / "images"
     _icons.load(
-        name="reset", 
-        path=str(icons_dir / "icon_reset.png"), 
-        path_type="IMAGE")
+        "reset", 
+        str(icons_dir / "icon_reset.png"), 
+        "IMAGE")
 
 
 def unregister():
